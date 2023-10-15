@@ -11,5 +11,3 @@ def download_image(url, filename):
 
 def get_bytes_from_image(image_path):
     return open(image_path, 'rb').read()
-
-

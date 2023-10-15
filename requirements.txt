@@ -1,3 +1,2 @@
 Flask
 torchvision
-jinja2

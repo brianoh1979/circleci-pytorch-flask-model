@@ -14,4 +14,3 @@ class TestDenseNetModel(unittest.TestCase):
         prediction = get_prediction(img_bytes)
 
         self.assertEqual(prediction, ['n02124075', 'Egyptian_cat'])
-

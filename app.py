@@ -6,6 +6,10 @@ from predict import get_prediction
 app = Flask(__name__)
 tmp_dir = '/tmp'
 
+@app.route('/')
+def index():
+    return 'Welcome to the Image Classification API!'
+
 @app.route('/predict', methods=['POST'])
 def predict():
     if request.method == 'POST':
@@ -18,6 +22,7 @@ def predict():
             class_id, class_name = get_prediction(image_bytes=img_bytes)
             return jsonify({'class_id': class_id, 'class_name': class_name})
         except Exception as e:
+            print(e)
             return jsonify({'error': str(e)}), 500
 
 
