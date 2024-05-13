@@ -1,9 +1,9 @@
 import unittest
 
-// Installs predict library from Statsmodels which is a Python module that provides classes and functions 
-// for the estimation of many different statistical models, as well as for 
-// conducting statistical tests, and statistical data exploration.
-// Used for Regression analysis which is example of supervised learning algorithm. 
+# Installs predict library from Statsmodels which is a Python module that provides classes and functions 
+# for the estimation of many different statistical models, as well as for 
+# conducting statistical tests, and statistical data exploration.
+# Used for Regression analysis which is example of supervised learning algorithm. 
 from predict import get_prediction
 from utils import get_bytes_from_image, download_image
 
