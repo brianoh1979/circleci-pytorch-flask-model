@@ -1,12 +1,12 @@
 import io
 import json
 
-// Pytorch uses a very simple CNN architecture, with only two convolutional layers to extract features from the image.
+# Pytorch uses a very simple CNN architecture, with only two convolutional layers to extract features from the image.
 from torchvision import models
 import torchvision.transforms as transforms
 from PIL import Image
-// Densely Connected Convolutional Networks (DenseNet) is a feed-forward convolutional neural network (CNN) architecture 
-// that links each layer to every other layer.
+# Densely Connected Convolutional Networks (DenseNet) is a feed-forward convolutional neural network (CNN) architecture 
+# that links each layer to every other layer.
 from torchvision.models import DenseNet121_Weights
 
 imagenet_class_index = json.load(open('imagenet_class_index.json'))
